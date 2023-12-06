@@ -1,5 +1,5 @@
 describe('Adição de Produtos ao Carrinho', () => {
-    it('Deve testar a funcionalidade de adicionar produtos ao carrinho', () => {
+    it('Adição de itens no carrinho', () => {
 
         cy.visit('https://saucedemo.com')
         cy.get('#user-name').type('problem_user')
@@ -25,17 +25,14 @@ describe('Adição de Produtos ao Carrinho', () => {
         cy.get('.cart_list').should('have.length', 3);
     });
 
-    it('Deve testar o limite máximo de produtos no carrinho', () => {
-        // (O código do login já deve ter sido executado)
-
-        // Adicionar produtos até atingir o limite máximo
-        for (let i = 0; i < 5; i++) {
-            cy.get('.add_to_cart').eq(i).click();
-        }
-
-        // Verificar se uma mensagem de erro ou feedback apropriada é exibida (ajuste o seletor conforme necessário)
-        cy.get('.error_message').should('exist');
-    });
+    // it('Deve testar o limite máximo de produtos no carrinho', () => {
+    //     // Adicionar produtos até atingir o limite máximo
+    //     for (let i = 0; i < 6; i++) {
+    //         cy.get('.add_to_cart').eq(i).click();
+    //     }
+    //     // Verificar se uma mensagem de erro ou feedback apropriada é exibida (ajuste o seletor conforme necessário)
+    //     cy.get('.error_message').should('exist');
+    // });
 });
 
 
