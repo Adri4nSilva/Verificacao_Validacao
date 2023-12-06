@@ -19,9 +19,9 @@ describe('Fluxo de login', () => {
 })
 
 /*
-  !Cenário 1: Login e Navegação
-  ?1. Você deve testar o fluxo de login no Sauce Demo.
-  ?2. Verificar se o usuário é redirecionado corretamente para a página inicial após o login.
-  ?3. Verificar se o menu de navegação está funcionando corretamente, permitindo a transição entre diferentes páginas.
-  ?4. Verificar se os elementos de navegação (links, botões etc.) estão corretamente posicionados e funcionais em todas as páginas
+  *0. Cenário 1: Login e Navegação
+  *1. Você deve testar o fluxo de login no Sauce Demo.
+  *2. Verificar se o usuário é redirecionado corretamente para a página inicial após o login.
+  *3. Verificar se o menu de navegação está funcionando corretamente, permitindo a transição entre diferentes páginas.
+  *4. Verificar se os elementos de navegação (links, botões etc.) estão corretamente posicionados e funcionais em todas as páginas
 */

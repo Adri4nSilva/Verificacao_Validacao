@@ -16,6 +16,21 @@ describe('Catálogo dos produtos', () => {
             expect(productName).to.not.be.empty;
             expect(productPrice).to.match(/^\$\d+\.\d{2}$/);
         });
+
+        // // (O código do login já deve ter sido executado)
+
+        // // Clicar no botão de filtragem (substitua o seletor pelo correto)
+        // cy.get('.product_sort_container').click(); // Substitua '.filter_button' pelo seletor real do botão de filtragem
+
+        // // Verificar se as opções de filtragem são exibidas
+        // cy.get('.product_sort_container').should('exist');
+
+        // // Clicar na opção de filtrar por nome em ordem crescente (substitua o seletor pelo correto)
+        // cy.get('.az').click(); // Substitua '.filter_option_name_asc' pelo seletor real da opção
+
+        // // Verificar se os resultados estão consistentes e corretos após a aplicação do filtro
+        // cy.get('.inventory_item').should('have.length.greaterThan', 0);
+
     })
 })
 
